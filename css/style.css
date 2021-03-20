@@ -24,6 +24,8 @@ html {
   --accent-color: #2196f3;
   --dark-bg-color: #2f303a;
   --section-bg-color: #f5f4fa;
+  --logo-header: #000000;
+  --logo-footer-and-active-link-button: #ffffff;
 }
 
 body {
@@ -107,8 +109,7 @@ button {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  color: #000000;
+  color: var(--logo-header);
 }
 
 .web {
@@ -148,6 +149,10 @@ button {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.active-menu {
   color: var(--accent-color);
 }
 
@@ -201,7 +206,7 @@ button {
   text-transform: uppercase;
   max-width: 700px;
 
-  color: #ffffff;
+  color: var(--logo-footer-and-active-link-button);
 }
 
 .button {
@@ -218,15 +223,17 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  outline: none;
-  border: none;
-
+  color: var(--logo-footer-and-active-link-button);
+  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover,
 .button:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* -------FEATURES------*/
@@ -326,7 +333,7 @@ button {
   padding-bottom: 30px;
   text-align: center;
 
-  background: #ffffff;
+  background: var(--logo-footer-and-active-link-button);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -350,7 +357,7 @@ button {
 
 .footer {
   background-color: var(--dark-bg-color);
-  color: #ffffff;
+  color: var(--logo-footer-and-active-link-button);
 }
 
 .footer .container {
@@ -366,7 +373,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--logo-footer-and-active-link-button);
 }
 
 .footer .link:hover,
@@ -385,7 +392,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--logo-footer-and-active-link-button);
 }
 
 .address .item {
@@ -426,9 +433,18 @@ button {
   background-color: #f5f4fa;
 }
 
+.active-button {
+  color: var(--logo-footer-and-active-link-button);
+  background: var(--accent-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px 4px 4px 4px;
+}
+
 .button-filter:hover,
 .button-filter:focus {
-  color: #ffffff;
+  color: var(--logo-footer-and-active-link-button);
   background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -448,7 +464,7 @@ button {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  background: #ffffff;
+  background: var(--logo-footer-and-active-link-button);
 }
 
 .page-content .item:nth-child(3n + 3) {
