@@ -79,28 +79,27 @@ button {
   width: 1200px;
   margin-left: 215px;
   margin-right: 215px;
-  padding-top: 94px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* ------ШАПКА САЙТА------ */
-
-.header {
-  border-bottom: 1px solid #ececec;
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.header-flex {
+/* ------ШАПКА САЙТА------ */
+.header .container {
   display: flex;
   align-items: center;
 }
 
-.header .container {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -130,8 +129,6 @@ button {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .item {
@@ -172,15 +169,14 @@ button {
 
 .contact .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
 }
-/* Герой */
+
+/* -----Герой------ */
 
 .hero {
   background-color: var(--dark-bg-color);
@@ -211,7 +207,6 @@ button {
 
 .button {
   display: block;
-  border-radius: 4px;
   min-width: 200px;
   height: 50px;
   margin-right: auto;
@@ -224,7 +219,6 @@ button {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--logo-footer-and-active-link-button);
-  outline-color: var(--accent-color);
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -331,12 +325,18 @@ button {
 .team .list .card {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
+  max-width: 270px;
 
   background: var(--logo-footer-and-active-link-button);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team .card p {
+  word-break: break-all;
 }
 
 .team p {
@@ -399,10 +399,13 @@ button {
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
+.white-address {
+  color: #ffffff;
+}
 
 /* Portfolio*/
 
-.nav-list .list {
+.nav-list {
   display: flex;
   justify-content: center;
 }
@@ -416,7 +419,6 @@ button {
 
 .button-filter {
   display: inline-block;
-  border-radius: 4px;
   height: 38px;
   padding: 6px 22px;
   text-align: center;
@@ -425,8 +427,7 @@ button {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  outline: none;
-  border: none;
+  border: 0px;
   text-decoration: none;
 
   color: var(--secondary-color);
@@ -451,14 +452,15 @@ button {
   border-radius: 4px 4px 4px 4px;
 }
 
-.container .page-content {
+.portfolio-list .list {
+  display: flex;
+}
+
+.container .portfolio-list {
   padding-top: 0px;
 }
 
-.page-content {
-  display: flex;
-}
-.page-content .item {
+.portfolio-list .item {
   display: inline-block;
   width: 370;
   margin-right: 30px;
@@ -467,12 +469,12 @@ button {
   background: var(--logo-footer-and-active-link-button);
 }
 
-.page-content .item:nth-child(3n + 3) {
+.portfolio-list .item:nth-child(3n + 3) {
   margin-right: 0px;
 }
 
-.page-content .item:hover,
-.page-content .item:focus {
+.portfolio-list.item:hover,
+.portfolio-list.item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
