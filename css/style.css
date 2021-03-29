@@ -98,8 +98,6 @@ section {
 
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo {
@@ -129,6 +127,8 @@ section {
 
 .site-nav .link {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .site-nav .item {
@@ -169,6 +169,8 @@ section {
 
 .contact .link {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .contact .link:hover,
@@ -182,7 +184,7 @@ section {
   background-color: var(--dark-bg-color);
 }
 
-.hero .container {
+section .hero {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -267,14 +269,11 @@ section {
 
 .occupation {
   display: flex;
+  padding-top: 0px;
 }
 
 .occupation .item {
   display: inline-block;
-}
-
-.occupation .container {
-  padding-top: 0px;
 }
 
 .occupation .item + .item {
@@ -360,7 +359,7 @@ section {
   color: var(--logo-footer-and-active-link-button);
 }
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -410,7 +409,7 @@ section {
   justify-content: center;
 }
 .container .nav-list {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .nav-list .item + .item {
